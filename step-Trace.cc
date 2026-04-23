@@ -98,7 +98,7 @@ namespace StepTrace{
   const Point<2> &  center = Point<2>(0.6,0);
   const Functions::SignedDistance::Sphere<2> level_set_function_1(center, 1.0);
 
-  const Point<2> point_on_line(1.0, 0.0);              // line at x=0.6
+  const Point<2> point_on_line(0.9, 0.0);
   Tensor<1, 2> normal_vector = []{
     Tensor<1, 2> t;
     t[0] = 1.0;
@@ -1018,6 +1018,17 @@ namespace StepTrace{
     //data_out.add_data_vector(dof_handler, solution, "solution");
     data_out.add_data_vector(level_set_dof_handler, level_set, "level_set");
     data_out.add_data_vector(level_set_dof_handler_2, level_set_2, "level_set_2");
+
+    // Add material ID as cell data
+    Vector<float> material_ids(triangulation.n_active_cells());
+
+    unsigned int index = 0;
+    for (const auto &cell : triangulation.active_cell_iterators())
+    {
+      material_ids[index++] = cell->material_id();
+    }
+
+    data_out.add_data_vector(material_ids, "material_id");
 
     data_out.set_cell_selection(
       [this](const typename Triangulation<dim>::cell_iterator &cell) {
