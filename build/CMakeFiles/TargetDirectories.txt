@@ -1,0 +1,10 @@
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/step-Trace.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/run.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/debug.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/release.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/runclean.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/distclean.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/strip_comments.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/info.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/edit_cache.dir
+/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/rebuild_cache.dir

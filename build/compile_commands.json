@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/aaron/General/Step_Trace/step-Trace/build",
+  "command": "/usr/bin/g++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_CHRONO_DYN_LINK -DBOOST_CHRONO_NO_LIB -DBOOST_CONTAINER_DYN_LINK -DBOOST_CONTAINER_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DBOOST_DATE_TIME_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DBOOST_RANDOM_DYN_LINK -DBOOST_RANDOM_NO_LIB -DBOOST_REGEX_DYN_LINK -DBOOST_REGEX_NO_LIB -DBOOST_SERIALIZATION_DYN_LINK -DBOOST_SERIALIZATION_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -DDEBUG -DKOKKOS_DEPENDENCE -D_GLIBCXX_ASSERTIONS -isystem /usr/include/deal.II/bundled -isystem /usr/include/kokkos -isystem /usr/include/suitesparse -pedantic -Wall -Wextra -Wmissing-braces -Woverloaded-virtual -Wpointer-arith -Wsign-compare -Wsuggest-override -Wswitch -Wsynth -Wwrite-strings -Wno-placement-new -Wno-literal-suffix -Wno-psabi -Wno-unused-local-typedefs -fopenmp-simd -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -Wp,-D_GLIBCXX_ASSERTIONS -Wno-unknown-pragmas -Wno-cpp -O0 -ggdb -Wa,--compress-debug-sections -o CMakeFiles/step-Trace.dir/step-Trace.cc.o -c /home/aaron/General/Step_Trace/step-Trace/step-Trace.cc",
+  "file": "/home/aaron/General/Step_Trace/step-Trace/step-Trace.cc",
+  "output": "/home/aaron/General/Step_Trace/step-Trace/build/CMakeFiles/step-Trace.dir/step-Trace.cc.o"
+}
+]

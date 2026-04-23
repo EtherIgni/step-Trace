@@ -1,0 +1,3504 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "/usr/lib/libdeal_II.so.9.7.1"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"deal_ii_setup_target",
+			"deal_ii_invoke_autopilot",
+			"set_target_properties"
+		],
+		"files" : 
+		[
+			"/usr/lib/cmake/deal.II/deal.IITargets.cmake",
+			"/usr/share/deal-ii/macros/macro_deal_ii_setup_target.cmake",
+			"/usr/share/deal-ii/macros/macro_deal_ii_invoke_autopilot.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 108,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 51,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 4
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"fileSets" : 
+	[
+		{
+			"baseDirectories" : 
+			[
+				"/usr/include"
+			],
+			"name" : "headers",
+			"type" : "HEADERS",
+			"visibility" : "INTERFACE"
+		}
+	],
+	"id" : "dealii::dealii_release::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_lapack::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_mpi::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_tbb::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_zlib::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_boost::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_trilinos::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_umfpack::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_kokkos::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_gsl::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_hdf5::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_muparser::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_lapack::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_mpi::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_tbb::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_zlib::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_boost::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_trilinos::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_umfpack::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_kokkos::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_gsl::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_hdf5::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "dealii::interface_muparser::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceSources" : 
+	[
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/any_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/general_data_storage.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/named_selection.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/newton.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/newton.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/operator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/operator.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/theta_timestepping.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/theta_timestepping.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/algorithms/timestep_control.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/arborx/access_traits.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/arborx/bvh.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/arborx/distributed_tree.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/aligned_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/array_view.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/auto_derivative_function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/bounding_box.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/bounding_box_data_out.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/communication_pattern_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/complex_overloads.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/conditional_ostream.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/config.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/convergence_table.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/data_out_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/derivative_form.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/discrete_time.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/enable_observer_pointer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/event.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/exception_macros.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/exceptions.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/floating_point_comparator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/flow_function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_bessel.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_cspline.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_derivative.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_lib.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_parser.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_restriction.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_signed_distance.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_spherical.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_time.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_time.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/function_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/geometric_utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/geometry_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/graph_coloring.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/hdf5.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/incremental_function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/index_set.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/init_finalize.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/iterator_range.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/job_identifier.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/kokkos.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/lazy.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/linear_index_iterator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/logstream.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/memory_consumption.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/memory_space.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/memory_space_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mg_level_object.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_consensus_algorithms.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_consensus_algorithms.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_large_count.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_noncontiguous_partitioner.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_noncontiguous_partitioner.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_remote_point_evaluation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_stub.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mpi_tags.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mu_parser_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/multithread_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mutable_bind.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/mutex.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/ndarray.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/numbers.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/observer_pointer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/parallel.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/parameter_acceptor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/parameter_handler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/parsed_convergence_table.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/parsed_function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/partitioner.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/partitioner.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/path_search.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/patterns.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/point.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomial.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomial_space.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_abf.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_adini.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_barycentric.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_bdm.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_bernardi_raugel.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_bernstein.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_hermite.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_integrated_legendre_sz.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_nedelec.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_p.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_piecewise.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_pyramid.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_rannacher_turek.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_raviart_thomas.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_rt_bubbles.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_vector_anisotropic.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/polynomials_wedge.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/process_grid.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/qprojector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/quadrature.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/quadrature_lib.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/quadrature_point_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/quadrature_selector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/revision.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/sacado_product_type.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/scalar_polynomials_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/scope_exit.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/signaling_nan.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/smartpointer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx17/algorithm.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx17/cmath.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx17/optional.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx17/tuple.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx17/variant.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx20/functional.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx20/iota_view.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/std_cxx20/type_traits.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/subscriptor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/symbolic_function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/symbolic_function.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/symmetric_tensor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/symmetric_tensor.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/synchronous_iterator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/table.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/table_handler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/table_indices.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/task_result.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/template_constraints.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_accessors.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_function.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_function_parser.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_polynomials_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_product_polynomials.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_product_polynomials_bubbles.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/tensor_product_polynomials_const.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/thread_local_storage.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/thread_management.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/time_stepping.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/time_stepping.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/timer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/trilinos_utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/undefine_macros.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/vector_slice.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/vectorization.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/base/work_stream.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/boost_adaptors/bounding_box.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/boost_adaptors/point.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/boost_adaptors/segment.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/cgal/additional_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/cgal/intersections.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/cgal/point_conversion.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/cgal/polygon.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/cgal/surface_mesh.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/cgal/triangulation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/cgal/utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/ad_drivers.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/ad_helpers.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/ad_number_traits.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/ad_number_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/adolc_math.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/adolc_number_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/adolc_product_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/sacado_math.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/sacado_number_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/ad/sacado_product_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_math.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_number_traits.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_number_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_number_visitor_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_optimizer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_product_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_scalar_operations.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_tensor_operations.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/differentiation/sd/symengine_utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/cell_data_transfer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/cell_data_transfer.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/cell_weights.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/field_transfer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/fully_distributed_tria.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/grid_refinement.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/p4est_wrappers.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/repartitioning_policy_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/shared_tria.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/solution_transfer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/tria.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/distributed/tria_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/block_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_accessor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_accessor.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_faces.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_handler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_handler_policy.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_iterator_selector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_levels.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_objects.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_renumbering.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/dof_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/dofs/number_cache.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/block_mask.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/component_mask.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_abf.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_bdm.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_bernardi_raugel.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_bernstein.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_coupling_values.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_dg_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_dg_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_dgp.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_dgp_monomial.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_dgp_nonparametric.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_dgq.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_enriched.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_face.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_hermite.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_interface_values.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_nedelec.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_nedelec_sz.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_nothing.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_p1nc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_poly.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_poly_face.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_poly_face.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_poly_tensor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_pyramid_p.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_q.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_q_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_q_bubbles.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_q_dg0.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_q_hierarchical.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_q_iso_q1.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_rannacher_turek.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_raviart_thomas.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_rt_bubbles.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_series.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_simplex_p.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_simplex_p_bubbles.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_system.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_tools.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_tools_extrapolate.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_tools_interpolate.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_trace.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_update_flags.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_values.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_values_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_values_extractors.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_values_views.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_values_views_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/fe_wedge_p.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_c1.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_cartesian.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_fe.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_fe_field.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_fe_field.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_manifold.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_p1.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_q.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_q1.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_q1_eulerian.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_q_cache.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_q_eulerian.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_q_generic.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_q_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/fe/mapping_related_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/gmsh/utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/cell_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/cell_id.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/cell_id_translator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/cell_status.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/composition_manifold.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/connectivity.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/filtered_iterator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_generator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_in.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_out.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_refinement.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_tools_cache.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_tools_cache_update_flags.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_tools_geometry.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/grid_tools_topology.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/intergrid_map.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/magic_numbers.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/manifold.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/manifold_lib.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/persistent_tria.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/reference_cell.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tensor_product_manifold.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_accessor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_accessor.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_description.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_faces.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_iterator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_iterator.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_iterator_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_iterator_selector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_levels.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_objects.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_objects_orientations.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/grid/tria_orientation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/hp/collection.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/hp/fe_collection.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/hp/fe_values.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/hp/mapping_collection.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/hp/q_collection.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/hp/refinement.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/advection.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/divergence.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/elasticity.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/grad_div.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/l2.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/laplace.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/local_integrators.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/maxwell.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/integrators/patches.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/affine_constraints.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/affine_constraints.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/arpack_solver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/blas_extension_templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_indices.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_linear_operator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_matrix_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_sparse_matrix.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_sparse_matrix_ez.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_sparse_matrix_ez.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_sparsity_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/block_vector_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/chunk_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/chunk_sparse_matrix.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/chunk_sparsity_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/constrained_linear_operator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/constraint_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/diagonal_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/dynamic_sparsity_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/eigen.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/exceptions.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/full_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/full_matrix.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/generic_linear_algebra.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/ginkgo_solver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/householder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/identity_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/la_parallel_block_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/la_parallel_block_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/la_parallel_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/la_parallel_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/lapack_full_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/lapack_support.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/lapack_templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/linear_operator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/linear_operator_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/matrix_block.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/matrix_iterator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/matrix_out.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/orthogonalization.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/packaged_operation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/parpack_solver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_block_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_block_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_communication_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_compatibility.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_full_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_matrix_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_matrix_free.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_parallel_block_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_parallel_block_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_parallel_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_parallel_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_precondition.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_snes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_snes.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_solver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_ts.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_ts.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/petsc_vector_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/precondition.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/precondition_block.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/precondition_block.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/precondition_block_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/precondition_selector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/qr.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/read_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/read_write_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/read_write_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/relaxation_block.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/relaxation_block.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/scalapack.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/scalapack.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/schur_complement.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/slepc_solver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/slepc_spectral_transformation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_bicgstab.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_cg.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_control.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_fire.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_gmres.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_idr.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_minres.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_qmrs.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_relaxation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_richardson.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/solver_selector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_decomposition.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_decomposition.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_direct.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_ilu.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_ilu.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_matrix.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_matrix_ez.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_matrix_ez.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_matrix_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_mic.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_mic.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_vanka.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparse_vanka.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparsity_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparsity_pattern_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/sparsity_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/tensor_product_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/tensor_product_matrix.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/tridiagonal_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_block_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_epetra_communication_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_epetra_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_index_access.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_linear_operator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_parallel_block_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_precondition.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_solver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_sparsity_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_block_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_block_sparse_matrix.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_block_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_block_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_communication_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_precondition.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_precondition.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_solver_direct.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_solver_direct.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_sparse_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_sparse_matrix.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_sparsity_pattern.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_tpetra_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/trilinos_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector_element_access.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector_memory.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector_memory.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector_operation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector_operations_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector_space_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/lac/vector_type_traits.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/constraint_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/dof_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/dof_info.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_flags.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_kernels.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_kernels_common.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_kernels_face.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_kernels_hanging_nodes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_selector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_template_face_factory.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_template_factory.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_template_factory.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_template_factory_hanging_nodes.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/evaluation_template_factory_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/face_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/face_setup_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/fe_evaluation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/fe_evaluation_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/fe_point_evaluation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/fe_remote_evaluation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/hanging_nodes_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/mapping_data_on_the_fly.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/mapping_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/mapping_info.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/mapping_info_storage.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/mapping_info_storage.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/matrix_free.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/matrix_free.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/operators.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/portable_evaluation_kernels.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/portable_fe_evaluation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/portable_hanging_nodes_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/portable_matrix_free.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/portable_matrix_free.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/portable_tensor_product_kernels.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/shape_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/shape_info.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/task_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/tensor_product_kernels.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/tensor_product_point_kernels.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/type_traits.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/util.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/vector_access_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/matrix_free/vector_data_exchange.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/assemble_flags.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/assembler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/copy_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/dof_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/dof_info.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/functional.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/integration_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/integration_info.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/local_integrator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/local_results.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/loop.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/mesh_loop.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/output.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/scratch_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/simple.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/vector_selector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/meshworker/vector_selector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_base.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_base.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_block_smoother.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_coarse.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_constrained_dofs.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_matrix.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_smoother.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_block.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_block.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_component.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_component.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_global_coarsening.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_global_coarsening.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_matrix_free.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/mg_transfer_matrix_free.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/multigrid.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/multigrid.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/multigrid/sparse_matrix_collection.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/non_matching/coupling.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/non_matching/fe_immersed_values.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/non_matching/fe_values.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/non_matching/immersed_surface_quadrature.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/non_matching/mapping_info.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/non_matching/mesh_classifier.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/non_matching/quadrature_generator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/adaptation_strategies.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/cell_data_transfer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/cell_data_transfer.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_component_interpretation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_out.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_out_dof_data.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_out_dof_data.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_out_faces.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_out_resample.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_out_rotation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_out_stack.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/data_postprocessor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/derivative_approximation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/dof_output_operator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/dof_output_operator.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/dof_print_solver_step.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/error_estimator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/error_estimator.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/fe_field_function.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/fe_field_function.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/histogram.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/history.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/matrix_creator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/matrix_creator.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/matrix_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/nonlinear.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/point_value_history.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/rtree.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/smoothness_estimator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/solution_transfer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/solution_transfer.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/tensor_product_matrix_creator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/time_dependent.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_boundary.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_boundary.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_common.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_constraints.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_constraints.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_evaluate.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_integrate_difference.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_integrate_difference.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_interpolate.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_interpolate.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_mean_value.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_mean_value.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_point_gradient.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_point_gradient.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_point_value.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_point_value.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_project.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_project.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_rhs.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/numerics/vector_tools_rhs.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/opencascade/boundary_lib.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/opencascade/manifold_lib.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/opencascade/utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/optimization/rol/vector_adaptor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/data_out.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/generators.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/particle.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/particle_accessor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/particle_handler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/particle_iterator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/partitioner.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/property_pool.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/particles/utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/physics/elasticity/kinematics.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/physics/elasticity/standard_tensors.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/physics/notation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/physics/transformations.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/physics/vector_relations.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/arkode.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/ida.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/kinsol.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/n_vector.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/n_vector.templates.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/sundials_types.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/sunlinsol_wrapper.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/sundials/utilities.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/trilinos/nox.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"fileSetIndex" : 0,
+			"path" : "/usr/include/deal.II/trilinos/nox.templates.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"local" : true,
+	"name" : "dealii::dealii_release",
+	"nameOnDisk" : "libdeal_II.so.9.7.1",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "SHARED_LIBRARY"
+}

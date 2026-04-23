@@ -3,11 +3,12 @@
   "configurations": [
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/miawallace/Documents/GitHub/step-Trace",
-      "program": "/Users/miawallace/Documents/GitHub/step-Trace/build/Debug/outDebug"
-    }
+      "cwd": "${workspaceFolder}",
+      "program": "${command:cmake.launchTargetPath}",
+      "MIMode": "gdb"
+    } 
   ]
 }

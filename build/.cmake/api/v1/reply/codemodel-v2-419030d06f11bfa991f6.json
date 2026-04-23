@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::dealii::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__dealii-Debug-7c3bdf9892395c3de3d0.json",
+					"name" : "dealii::dealii",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::dealii_debug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__dealii_debug-Debug-919b6236ec9c04f869f7.json",
+					"name" : "dealii::dealii_debug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::dealii_release::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__dealii_release-Debug-c11c436cd9181a4734be.json",
+					"name" : "dealii::dealii_release",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_boost::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_boost-Debug-755bbbac081c527f0284.json",
+					"name" : "dealii::interface_boost",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_gsl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_gsl-Debug-2a5ced230c476a0a981b.json",
+					"name" : "dealii::interface_gsl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_hdf5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_hdf5-Debug-0da11653eec7f70bf127.json",
+					"name" : "dealii::interface_hdf5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_kokkos::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_kokkos-Debug-5441769428fa1478567c.json",
+					"name" : "dealii::interface_kokkos",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_lapack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_lapack-Debug-630913ef7e8f848d6cdf.json",
+					"name" : "dealii::interface_lapack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_mpi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_mpi-Debug-6a2acda6bae11e078185.json",
+					"name" : "dealii::interface_mpi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_muparser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_muparser-Debug-d19ce84f59ad4c1451bb.json",
+					"name" : "dealii::interface_muparser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_tbb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_tbb-Debug-80898f6c25df1090ee68.json",
+					"name" : "dealii::interface_tbb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_trilinos::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_trilinos-Debug-8a68e2c15ce02d249ba0.json",
+					"name" : "dealii::interface_trilinos",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_umfpack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_umfpack-Debug-10e37749277b6f0a8906.json",
+					"name" : "dealii::interface_umfpack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dealii::interface_zlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dealii__interface_zlib-Debug-9cee3f78bdbc3cf97091.json",
+					"name" : "dealii::interface_zlib",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-fd6451d79dc282e2f566.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13.4"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "step-Trace",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "debug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-debug-Debug-d7c6f9add68877f23d53.json",
+					"name" : "debug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "distclean::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-distclean-Debug-ecae6774aa388f8553bc.json",
+					"name" : "distclean",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "info::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-info-Debug-0209dddcc59e7e7f2747.json",
+					"name" : "info",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "release::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-release-Debug-b53ab85006f2a329b98e.json",
+					"name" : "release",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run-Debug-44f3456b9c646ebc2593.json",
+					"name" : "run",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "runclean::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-runclean-Debug-229cfce5c970bea9fa71.json",
+					"name" : "runclean",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "step-Trace::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-step-Trace-Debug-493639613a8cb8b22286.json",
+					"name" : "step-Trace",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "strip_comments::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-strip_comments-Debug-63c95506840857450197.json",
+					"name" : "strip_comments",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/aaron/General/Step_Trace/step-Trace/build",
+		"source" : "/home/aaron/General/Step_Trace/step-Trace"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}
