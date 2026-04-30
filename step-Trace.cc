@@ -21,8 +21,9 @@
 // The first include files have all been treated in previous examples.
 
 
-#include <deal.II/base/function.h>
+#include <assert.h>
 
+#include <deal.II/base/function.h>
 
 #include <deal.II/base/convergence_table.h>
 #include <deal.II/base/point.h>
@@ -95,7 +96,7 @@ namespace StepTrace{
 
 
 
-  const Point<2> &  center = Point<2>(0.6,0);
+  const Point<2> &  center = Point<2>(0.5,0);
   const Functions::SignedDistance::Sphere<2> level_set_function_1(center, 1.0);
 
   const Point<2> point_on_line(0.9, 0.0);
@@ -251,7 +252,7 @@ namespace StepTrace{
 
 
 
-  // @sect3{Setting up the Discrete Level Set Function}
+  // @sect3{Setting up the Discrete Level Set Function}>
   // The discrete level set function is defined on the whole background mesh.
   // Thus, to set up the DoFHandler for the level set function, we distribute
   // DoFs over all elements in $\mathcal{T}_h$. We then set up the discrete
@@ -298,8 +299,8 @@ namespace StepTrace{
   // full perimeter = 2*PI
   double       expected_perimeter = 2*PI * ((inner_angle)/(2*(PI)));
 
-  double       cap_volume         =   3.284;
-  double       cap_area           =   8.7965;
+  double       cap_volume         =   2.34892;
+  double       cap_area           =   3.96463;
 
   // @sect3{Setting up the Finite Element Space}
   // To set up the finite element space $V_\Omega^h$, we will use 2 different
@@ -371,34 +372,35 @@ namespace StepTrace{
   std::vector<Point<dim>> find_levelset_intersections(
     const typename DoFHandler<dim>::active_cell_iterator &cell,
     const levelSetType &levelset){
-      std::vector<Point<dim>> points;
 
-      //Loops over every edge of the cell
-      for (unsigned int line_num = 0; line_num < GeometryInfo<dim>::lines_per_cell; ++line_num)
-      {
-        //Finds points on either end of the edge
-        Point<dim> point_1 = cell->line(line_num)->vertex(0);
-        Point<dim> point_2 = cell->line(line_num)->vertex(1);
+    std::vector<Point<dim>> points;
 
-        //Skips over edges that aren't crossed
-        double value_1 = levelset.value(point_1);
-        double value_2 = levelset.value(point_2);
-        if(value_1 * value_2 > 0.0){
-          continue;
-        }
+    //Loops over every edge of the cell
+    for (unsigned int line_num = 0; line_num < GeometryInfo<dim>::lines_per_cell; ++line_num)
+    {
+      //Finds points on either end of the edge
+      Point<dim> point_1 = cell->line(line_num)->vertex(0);
+      Point<dim> point_2 = cell->line(line_num)->vertex(1);
 
-        //Does a bisection search on the edge to find the zero point for the level set
-        Point<dim> intersect_point = bisection_search<dim>(point_1,
-                                                           point_2,
-                                                           [&](const Point<dim> &p){return levelset.value(p);},
-                                                           20,
-                                                           1e-6);
-
-        //Adds intersected point to the point list
-        points.push_back(intersect_point);
+      //Skips over edges that aren't crossed
+      double value_1 = levelset.value(point_1);
+      double value_2 = levelset.value(point_2);
+      if(value_1 * value_2 > 0.0){
+        continue;
       }
 
-      return points;
+      //Does a bisection search on the edge to find the zero point for the level set
+      Point<dim> intersect_point = bisection_search<dim>(point_1,
+                                                          point_2,
+                                                          [&](const Point<dim> &p){return levelset.value(p);},
+                                                          20,
+                                                          1e-6);
+
+      //Adds intersected point to the point list
+      points.push_back(intersect_point);
+    }
+
+    return points;
   }
 
 
@@ -411,20 +413,21 @@ namespace StepTrace{
     const typename DoFHandler<dim>::active_cell_iterator &cell,
     const levelSetType1 &level_set_1,
     const levelSetType2 &level_set_2){
-      // Calculates the list of points where levelset 1 intersects the cell
-      const auto intersect_points = find_levelset_intersections<dim,levelSetType1>(cell,level_set_1);
+      
+    // Calculates the list of points where levelset 1 intersects the cell
+    const auto intersect_points = find_levelset_intersections<dim,levelSetType1>(cell,level_set_1);
 
-      // We just chuck out edge cases with multiple crossings or only one edge crossing
-      if(intersect_points.size() != 2){
-        return false;
-      }
+    // We just chuck out edge cases with multiple crossings or only one edge crossing
+    if(intersect_points.size() != 2){
+      return false;
+    }
 
-      // Calculates the value of these points relative to levelset 2
-      double intersection_value_1 = level_set_2.value(intersect_points[0]);
-      double intersection_value_2 = level_set_2.value(intersect_points[1]);
+    // Calculates the value of these points relative to levelset 2
+    double intersection_value_1 = level_set_2.value(intersect_points[0]);
+    double intersection_value_2 = level_set_2.value(intersect_points[1]);
 
-      // If there is a sign change between the points then we know the levelsets crossed.
-      return(intersection_value_1 * intersection_value_2 <= 0.0);
+    // If there is a sign change between the points then we know the levelsets crossed.
+    return(intersection_value_1 * intersection_value_2 <= 0.0);
   }
 
 
@@ -468,31 +471,31 @@ namespace StepTrace{
       if(cell_location_1 == NonMatching::LocationToLevelSet::outside || 
          cell_location_2 == NonMatching::LocationToLevelSet::outside){
         cell->set_active_fe_index(ActiveFEIndex::nothing);
-        
         cell->set_material_id(0);
       }
       else if(cell_location_1 == NonMatching::LocationToLevelSet::inside){
-        cell->set_active_fe_index(ActiveFEIndex::lagrange);
-
         if(cell_location_2 == NonMatching::LocationToLevelSet::inside){
+          cell->set_active_fe_index(ActiveFEIndex::lagrange);
           cell->set_material_id(1);
         }
         else{
+          cell->set_active_fe_index(ActiveFEIndex::nothing);
           cell->set_material_id(2);
         }
       }
       else{
-        cell->set_active_fe_index(ActiveFEIndex::lagrange);
-
         if(cell_location_2 == NonMatching::LocationToLevelSet::inside){
+          cell->set_active_fe_index(ActiveFEIndex::lagrange);
           cell->set_material_id(3);
         }
         else{
           bool crossing = check_crossing<dim>(cell,level_set_function_1,level_set_function_2);
           if(crossing){
+            cell->set_active_fe_index(ActiveFEIndex::nothing);
             cell->set_material_id(5);
           }
           else{
+            cell->set_active_fe_index(ActiveFEIndex::nothing);
             cell->set_material_id(4);
           }
         }
@@ -506,6 +509,277 @@ namespace StepTrace{
 
 
 
+  // A function that can find the best point to approximate the levelset crossing
+  // by using a gauss_newton optimization method.
+  // Should add a check to make sure the guesses stay within the cell, but that's 
+  // a bit annoying and not done here.
+  template <int dim, typename levelSetType1, typename levelSetType2>
+  Point<dim> gauss_newton_optimize(
+    const Point<dim> &initial_point,
+    const levelSetType1 &level_set_1,
+    const levelSetType2 &level_set_2,
+    const unsigned int iteration_limit = 20,
+    const double step_tolerance = 1e-6,
+    const double distance_tolerance = 1e-6,
+    const double matrix_tolerance = 1e-10,
+    const double minimum_step_size = 1e-4){
+
+    Point<dim> current_guess = initial_point;
+
+    // Iteratively updates our guess to get closer and closer to zero on both levelsets
+    for(unsigned int i=0; i<iteration_limit; ++i){
+      // Gets the value of both level sets and the squared distance to both at our current guess
+      const double value_1 = level_set_1.value(current_guess);
+      const double value_2 = level_set_2.value(current_guess);
+      const double distance = value_1*value_1 +
+                              value_2*value_2;
+
+      // If our distance is small enough, we accept this point and break
+      if(distance < distance_tolerance){
+        break;
+      }
+
+      // Gets the gradient at our point for both levelsets
+      const Tensor<1,dim> gradient_1 = level_set_1.gradient(current_guess);
+      const Tensor<1,dim> gradient_2 = level_set_2.gradient(current_guess);
+
+      // Sets up the jacobian
+      FullMatrix<double> jacobian(2,dim);
+      for(unsigned int col=0; col<dim; ++col){
+        jacobian(0,col) = gradient_1[col];
+        jacobian(1,col) = gradient_2[col];
+      }
+
+      // Evaluates the residuals
+      Vector<double> residuals(2);
+      residuals[0] = value_1;
+      residuals[1] = value_2;
+
+      // Calculates A = J^T J
+      FullMatrix<double> A(dim,dim);
+      jacobian.Tmmult(A, jacobian);
+
+      // Calculates B = -J^T r(x)
+      Vector<double> B(dim);
+      jacobian.Tvmult(B, residuals);
+      B *= -1.0;
+
+      // If our A matrix is singular we can't solve the system, so we accept our previous point and break
+      if(std::abs(A.determinant()) < matrix_tolerance){
+        std::cout << "Encountered singular matrix in crossing point location" << std::endl;
+        break;
+      }
+
+      // Solves the gauss-newton problem (A dx = B)
+      Vector<double> step(dim);
+      A.gauss_jordan();
+      A.vmult(step,B);
+
+      // If our step is small enough then we're not making any progress. We accept our previous point and break
+      if(step.l2_norm() < step_tolerance){
+        break;
+      }
+
+      // Converts the step to a tensor so we can add easier
+      Tensor<1,dim> step_tensor;
+      for(unsigned int col=0; col<dim; ++col){
+        step_tensor[col] = step[col];
+      }
+
+      // We do a backwards line search to make sure we actually decrease our distance with this step
+      double step_strength = 1;
+      bool step_made = false;
+      while(step_strength > minimum_step_size){
+        // Gets a test point
+        Point <dim> test_guess = current_guess + step_strength * step_tensor;
+        
+        // Evaluates the point's distance to the levelsets
+        const double test_value_1  = level_set_1.value(test_guess);
+        const double test_value_2  = level_set_2.value(test_guess);
+        const double test_distance = test_value_1*test_value_1 + 
+                                     test_value_2*test_value_2;
+
+        // If the distance is smaller than before, we accept the step, update our gauss, and break from the line search
+        if(test_distance < distance){
+          step_made = true;
+          current_guess = test_guess;
+          break;
+        }
+
+        // If the distance isn't smaller, we half our step size and try again
+        step_strength *= 0.5;
+      }
+
+      // If we shrunk our step size so much that we're not making changes, then we assume that there is no better value
+      // in this direction, so we accept the previous point and break.
+      if(!step_made){
+        break;
+      }
+    }
+
+    return current_guess;
+  }
+
+
+
+  // This finds the exact point where two level sets cross within a given cell.
+  // Works by making a crude linear approximation of the crossing point before
+  // Handing it off to an optimization algorithm to further refine it.
+  // Make sure that both levelsets actually cross before using this or else
+  // You get garbage out.
+  template <int dim, typename levelSetType1, typename levelSetType2>
+  Point<dim> find_crossing_point(
+    const typename DoFHandler<dim>::active_cell_iterator &cell,
+    const levelSetType1 &level_set_1,
+    const levelSetType2 &level_set_2,
+    const double matrix_tolerance = 1e-10){
+
+    // This system only works in 2D currently
+    static_assert(dim == 2);
+    
+    // Get's the points where the levelsets cross the cell edges
+    const auto lvs1_intersections = find_levelset_intersections(cell, level_set_1);
+    const auto lvs2_intersections = find_levelset_intersections(cell, level_set_2);
+
+    // Ensures the levelsets behave properly at the cell boundaries
+    // Should be an unnecessary check
+    assert(lvs1_intersections.size() == 2);
+    assert(lvs2_intersections.size() == 2);
+
+    // Calculates the differences between the two edge crossing points for each levelset
+    const Tensor<1,dim> linear_difference_1 = lvs1_intersections[1] - lvs1_intersections[0];
+    const Tensor<1,dim> linear_difference_2 = lvs2_intersections[1] - lvs2_intersections[0];
+
+    // Everything below is a simple linear algebra problem used to find the place where the two
+    // levelsets cross under a linear approximation.
+    // This is the left hand matrix in the A x = B system
+    FullMatrix<double> intersection_matrix(2,2);
+    intersection_matrix(0,0) =  linear_difference_1[0];
+    intersection_matrix(1,0) =  linear_difference_1[1];
+    intersection_matrix(0,1) = -linear_difference_2[0];
+    intersection_matrix(1,1) = -linear_difference_2[1];
+
+    // If the matrix is singular there is no solution to this and we can't get an approximate crossing point
+    if(std::abs(intersection_matrix.determinant()) < matrix_tolerance){
+      throw std::runtime_error("Level set intersection approximation is singular");
+    }
+
+    // This is the left hand vector in the A x = B system
+    Vector<double> intersection_rhs(2);
+    intersection_rhs[0] = lvs2_intersections[0][0] - lvs1_intersections[0][0];
+    intersection_rhs[1] = lvs2_intersections[0][1] - lvs1_intersections[0][1];
+
+    // Solves for x, which is a vector or parameters along the segments between the crossing points
+    Vector<double> intersection_parameters(2);
+    intersection_matrix.gauss_jordan();
+    intersection_matrix.vmult(intersection_parameters, intersection_rhs);
+
+    // Get's the actual crude point approximating where the level sets cross
+    Point<dim> intersection_point = intersection_parameters[0] * (linear_difference_1) + lvs1_intersections[0];
+
+    // Further refines this guess to get an exact crossing point
+    Point<dim> crossing_point = gauss_newton_optimize<dim>(intersection_point,
+                                                            level_set_1,
+                                                            level_set_2);
+
+    return crossing_point;
+  }
+
+
+
+  // This will return the edge number that a point lies on, needed for corner cut cell
+  // evaluations. This could be done away with by holding onto more information from
+  // the initial cell type check.
+  template <int dim>
+  unsigned int find_edge_from_point(
+    const typename DoFHandler<dim>::active_cell_iterator &cell,
+    const Point<dim> &point,
+    const double norm_tolerance = 1e-6){
+
+    // This system only works in 2D currently
+    static_assert(dim == 2);
+    
+    // Loops over every edge to check if the point lies on it or not
+    for (unsigned int line_num = 0; line_num < GeometryInfo<dim>::lines_per_cell; ++line_num){
+      // Gets the vertices for this edge
+      const auto edge = cell->line(line_num);
+      const Point<dim> vertex_1 = edge->vertex(0);
+      const Point<dim> vertex_2 = edge->vertex(1);
+
+      // Shifts positions to the origin to allow computation
+      const Tensor<1,dim> shifted_point = point - vertex_1;
+      const Tensor<1,dim> shifted_edge  = vertex_2 - vertex_1;
+
+      // Calculates the projection of the point onto the edge
+      const double projection_scale = (shifted_point * shifted_edge) / (shifted_edge.norm_square());
+      const Tensor<1,dim> projection = projection_scale * shifted_edge;
+      
+      // Calculates the normal component of the point relative to the edge
+      const Tensor<1,dim> normal = shifted_point - projection;
+
+      // If the normal component is small enough then the point belongs to this edge and we call it here
+      if(normal.norm() < norm_tolerance){
+        return line_num;
+      }
+    }
+
+    // If the point doesn't belong to any edge then we have a problem
+    throw std::runtime_error("Point not on any edge");
+  }
+
+  // This will return the edge number for the edge that lies fully within the levelset,
+  // Needed for cross cut cell evaluations.
+  template <int dim, typename LevelSetType>
+  unsigned int find_inside_edge(
+    const typename DoFHandler<dim>::active_cell_iterator &cell,
+    const LevelSetType &level_set){
+
+    // This system only works in 2D currently
+    static_assert(dim == 2);
+    
+    // Loops over each edge checking if it's vertices are inside
+    for (unsigned int line_num = 0; line_num < GeometryInfo<dim>::lines_per_cell; ++line_num){
+      // Gets the vertices
+      const auto edge = cell->line(line_num);
+      const Point<dim> vertex_1 = edge->vertex(0);
+      const Point<dim> vertex_2 = edge->vertex(1);
+
+      // Evaluates the vertices
+      const double value_1 = level_set.value(vertex_1);
+      const double value_2 = level_set.value(vertex_2);
+
+      // If both of the vertices are in side then we found are edge and return its value
+      if(value_1 < 0.0 && value_2 < 0.0){
+        return line_num;
+      }
+    }
+
+    throw std::runtime_error("No edge inside the level set");
+  }
+
+
+
+  // This is a simple function to just count the number of vertices that are inside the
+  // levelset for a given cell.
+  template <int dim, typename LevelSetType>
+  unsigned int number_inside_vertices(
+    const typename DoFHandler<dim>::active_cell_iterator &cell,
+    const LevelSetType &level_set){
+    
+    unsigned int vertex_count = 0;
+
+    // Loops through each vertex
+    for (unsigned int v = 0; v < GeometryInfo<dim>::vertices_per_cell; ++v){
+      const Point<dim> vertex = cell->vertex(v);
+
+      // If the vertex is inside we increase our count
+      if(level_set.value(vertex) < 0.0){
+        vertex_count += 1;
+      }
+    }
+
+    return vertex_count;
+  }
 
 
 
@@ -1033,10 +1307,10 @@ namespace StepTrace{
     data_out.set_cell_selection(
       [this](const typename Triangulation<dim>::cell_iterator &cell) {
         return cell->is_active() &&
-              mesh_classifier.location_to_level_set(cell) ==
-                NonMatching::LocationToLevelSet::intersected &&
-              mesh_classifier_2.location_to_level_set(cell) ==
-                NonMatching::LocationToLevelSet::inside;
+              mesh_classifier.location_to_level_set(cell) !=
+                NonMatching::LocationToLevelSet::outside &&
+              mesh_classifier_2.location_to_level_set(cell) !=
+                NonMatching::LocationToLevelSet::outside;
       });
     
 
@@ -1294,14 +1568,6 @@ namespace StepTrace{
 
     double interface = 0.0;
 
-    const Point<dim> point_on_line(1.0, 0.0); // line level set 2
-    Tensor<1, dim> normal_vector;
-    normal_vector[0] = 1.0;
-    normal_vector[1] = 0.0;
-    // normal_vector[2] = 0.0;
-
-    const Functions::SignedDistance::Plane<dim> signed_distance_plane(point_on_line, normal_vector);
-
     for (const auto &cell : dof_handler.active_cell_iterators() |
                             IteratorFilters::ActiveFEIndexEqualTo(ActiveFEIndex::lagrange))
     {
@@ -1316,7 +1582,7 @@ namespace StepTrace{
         for (const unsigned int q : surface_fe_values->quadrature_point_indices())
         {
           const Point<dim> &point = surface_fe_values->quadrature_point(q);
-          const double ls2_value = signed_distance_plane.value(point); //level set 2 value of the quadrature point
+          const double ls2_value = level_set_function_2.value(point); //level set 2 value of the quadrature point
 
           if (ls2_value <= 0.0) // check if it's inside level set 2
             interface += surface_fe_values->JxW(q);
@@ -1394,14 +1660,6 @@ namespace StepTrace{
 
     double inside = 0.0;
 
-    const Point<dim> point_on_line(1.0, 0.0); // line for level set 2
-    Tensor<1, dim> normal_vector;
-    normal_vector[0] = 1.0;
-    normal_vector[1] = 0.0;
-    // normal_vector[2] = 0.0;
-
-    const Functions::SignedDistance::Plane<dim> signed_distance_plane(point_on_line, normal_vector);
-
     for (const auto &cell : dof_handler.active_cell_iterators() |
                             IteratorFilters::ActiveFEIndexEqualTo(ActiveFEIndex::lagrange))
     {
@@ -1415,7 +1673,7 @@ namespace StepTrace{
         for (const unsigned int q : fe_values->quadrature_point_indices())
         {
           const Point<dim> &point = fe_values->quadrature_point(q);
-          const double ls2_value = signed_distance_plane.value(point); //value of level set at quadrature point
+          const double ls2_value = level_set_function_2.value(point); //value of level set at quadrature point
 
           if (ls2_value <= 0.0) // check if it's inside level set
             inside += fe_values->JxW(q);
@@ -1491,7 +1749,7 @@ namespace StepTrace{
   template <int dim>
   void LaplaceBeltramiSolver<dim>::run(){
     ConvergenceTable   convergence_table;
-    const unsigned int n_refinements = 2;
+    const unsigned int n_refinements = 7;
 
 
     make_grid();
